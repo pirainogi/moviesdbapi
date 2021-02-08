@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 import './App.css';
+import GenreContainer from './GenreContainer';
+import GenreShow from './GenreShow'
+import MovieShow from './MovieShow'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+        tmdb api app
+        </header>
+        <Link to="/genres">Genres</Link>
+        <Switch>
+          <Route path="/genres/:genreId">
+            <GenreShow/>
+          </Route>
+          <Route path="/genres">
+            <GenreContainer/>
+          </Route>
+          <Route path="/movies/:movieId">
+            <MovieShow/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
