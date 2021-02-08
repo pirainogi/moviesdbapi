@@ -1,8 +1,20 @@
-# todos: 
-- how to start up application 
-- dependencies 
-- how to get an api key 
-- routes/functionality 
+# todos:
+- how to start up application
+  * `npm install`
+  * `npm start`
+- requirements
+  * React v17.0.1
+  * Node v14.4.0
+- dependencies
+  * React Router
+  * React-Pagination
+- how to get an api key
+  * [TMDB](https://developers.themoviedb.org/3/getting-started/introduction)
+- routes/functionality
+  * `/`
+  * `/genres`
+  * `/genres/id`
+  * `/movies/id`
 
 # Getting Started with Create React App
 
