@@ -1,3 +1,9 @@
+# todos: 
+- how to start up application 
+- dependencies 
+- how to get an api key 
+- routes/functionality 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
